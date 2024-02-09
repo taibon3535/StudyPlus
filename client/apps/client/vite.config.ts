@@ -10,6 +10,9 @@ export default defineConfig({
   server: {
     port: 4200,
     host: 'localhost',
+    fs: {
+      allow: ['..', 'C:/atai.dl.project_school/studyplus/client/apps/client']
+    }
   },
 
   preview: {

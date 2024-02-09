@@ -1,0 +1,242 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.0.3",
+  "deps": {
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.0",
+    "@nx/vite": "^18.0.3",
+    "tailwindcss": "^3.4.1",
+    "nx": "18.0.3"
+  },
+  "pathMappings": {
+    "@/*": [
+      "apps/*/src/*"
+    ],
+    "@env/*": [
+      "apps/*/src/environments/*"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "client/.eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "client/.gitignore",
+        "hash": "10634012609596249076"
+      },
+      {
+        "file": "client/.editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "4269139459948262124"
+      },
+      {
+        "file": "package.json",
+        "hash": "13458422945711612370"
+      },
+      {
+        "file": ".nx/installation/package.json",
+        "hash": "10517613838458045495"
+      },
+      {
+        "file": "client/.vscode/extensions.json",
+        "hash": "4134969992917317260"
+      },
+      {
+        "file": ".nx/installation/package-lock.json",
+        "hash": "18069280477925702985"
+      },
+      {
+        "file": "client/package.json",
+        "hash": "10886507637883740339"
+      },
+      {
+        "file": "nx.bat",
+        "hash": "16828809655253213278"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "13194702717607086212"
+      },
+      {
+        "file": "client/tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": "client/README.md",
+        "hash": "17229782188370411291"
+      },
+      {
+        "file": "client/package-lock.json",
+        "hash": "15350715926919567331"
+      },
+      {
+        "file": "client/.github/workflows/ci.yml",
+        "hash": "2869861214747347792"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "14633252589668083452"
+      },
+      {
+        "file": "nx",
+        "hash": "17165975525224888679"
+      },
+      {
+        "file": "client/.prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": "client/.eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "8100525011939674822"
+      },
+      {
+        "file": "client/.prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "tailwind.config.js",
+        "hash": "8813234761878262961"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10584956656480960299"
+      },
+      {
+        "file": "client/nx.json",
+        "hash": "10848883168985888489"
+      },
+      {
+        "file": ".nx/nxw.js",
+        "hash": "11254603345854076312"
+      }
+    ],
+    "projectFileMap": {
+      "client-e2e": [
+        {
+          "file": "client/apps/client-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "client/apps/client-e2e/cypress.config.ts",
+          "hash": "9009978577422157199"
+        },
+        {
+          "file": "client/apps/client-e2e/project.json",
+          "hash": "6973621041357412163"
+        },
+        {
+          "file": "client/apps/client-e2e/src/e2e/app.cy.ts",
+          "hash": "4604656125477134902"
+        },
+        {
+          "file": "client/apps/client-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "client/apps/client-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "client/apps/client-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "client/apps/client-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "client/apps/client-e2e/tsconfig.json",
+          "hash": "10740392072068377465"
+        }
+      ],
+      "client": [
+        {
+          "file": "client/apps/client/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "client/apps/client/index.html",
+          "hash": "11424016324654718745"
+        },
+        {
+          "file": "client/apps/client/project.json",
+          "hash": "13965554390975936689"
+        },
+        {
+          "file": "client/apps/client/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "client/apps/client/src/app/components/Background.tsx",
+          "hash": "7439874982833582233"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img2.jpg",
+          "hash": "4375659078919905133"
+        },
+        {
+          "file": "client/apps/client/src/app/routes/Root.tsx",
+          "hash": "3650391072120958266"
+        },
+        {
+          "file": "client/apps/client/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "client/apps/client/src/main.tsx",
+          "hash": "2710811743119522682"
+        },
+        {
+          "file": "client/apps/client/src/styles.css",
+          "hash": "12720999937865501131"
+        },
+        {
+          "file": "client/apps/client/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "client/apps/client/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "client/apps/client/tsconfig.spec.json",
+          "hash": "9472099605191632308"
+        },
+        {
+          "file": "client/apps/client/vite.config.ts",
+          "hash": "9359911543655382654"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img3.jpg",
+          "hash": "9758251166418482881"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img5.jpg",
+          "hash": "15631486773608969590"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img6.jpg",
+          "hash": "17775643527744850300"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img1.jpg",
+          "hash": "2899555017786104922"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img4.webp",
+          "hash": "487973341461214971"
+        }
+      ]
+    }
+  }
+}
