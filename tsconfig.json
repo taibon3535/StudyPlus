@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
+      "typeRoots": ["./node_modules/@types", "./types"],
+      "strict": true,
       "target": "es5",
       "module": "esnext",
-      "strict": true,
       "jsx": "preserve",
       "importHelpers": true,
       "moduleResolution": "node",
@@ -17,7 +18,7 @@
       },
       "lib": ["es2018", "dom"]
     },
-    "include": ["**/*.ts", "**/*.tsx"],
+    "include": ["**/*.ts", "**/*.tsx","src", "types"],
     "exclude": ["node_modules", "tmp"]
   }
   
