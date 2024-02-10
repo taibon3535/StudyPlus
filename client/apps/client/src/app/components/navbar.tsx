@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom';
 import AcademicCapIcon from '@heroicons/react/24/outline/AcademicCapIcon';
 
 export const Navbar = () => {
-    // Define a common style object for links to avoid repetition
     const linkStyle = {
         display: 'flex',
-        alignItems: 'center', // Centers items vertically
-        gap: '8px', // Creates a gap between icon and text
-        textDecoration: 'none', // Removes underline from links
-        color: 'inherit', // Uses the inherited font color
+        alignItems: 'center', 
+        gap: '8px', 
+        color: 'inherit', 
     };
 
     return (

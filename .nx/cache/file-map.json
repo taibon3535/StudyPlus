@@ -23,209 +23,115 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "client/.github/workflows/ci.yml",
-        "hash": "2869861214747347792"
-      },
-      {
-        "file": "heroicons.d.ts",
-        "hash": "16592861167843731278"
-      },
-      {
-        "file": "client/.eslintignore",
-        "hash": "7663861978715868291"
-      },
-      {
-        "file": ".gitattributes",
-        "hash": "13194702717607086212"
-      },
-      {
-        "file": "client/README.md",
-        "hash": "17229782188370411291"
-      },
-      {
-        "file": "client/.vscode/extensions.json",
-        "hash": "4134969992917317260"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "7458454758450106722"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "13900527231880248824"
-      },
-      {
-        "file": "client/.eslintrc.json",
-        "hash": "17866138117546000433"
+        "file": "client/.prettierignore",
+        "hash": "16448050467312557263"
       },
       {
         "file": ".gitignore",
         "hash": "8100525011939674822"
       },
       {
-        "file": "client/.gitignore",
-        "hash": "10634012609596249076"
-      },
-      {
-        "file": "client/nx.json",
-        "hash": "10848883168985888489"
-      },
-      {
-        "file": "client/.prettierignore",
-        "hash": "16448050467312557263"
-      },
-      {
-        "file": ".nx/nxw.js",
-        "hash": "11254603345854076312"
-      },
-      {
-        "file": "postcss.config.js",
-        "hash": "6152102791407978976"
-      },
-      {
-        "file": "package.json",
-        "hash": "13186482843281493258"
-      },
-      {
-        "file": "client/tsconfig.base.json",
-        "hash": "16936441711144470533"
-      },
-      {
-        "file": ".nx/installation/package-lock.json",
-        "hash": "18069280477925702985"
-      },
-      {
-        "file": "client/package-lock.json",
-        "hash": "15350715926919567331"
-      },
-      {
-        "file": "nx.bat",
-        "hash": "16828809655253213278"
-      },
-      {
-        "file": "client/.prettierrc",
-        "hash": "16267754514737964994"
+        "file": "tsconfig.json",
+        "hash": "7458454758450106722"
       },
       {
         "file": "client/.editorconfig",
         "hash": "5443105041930014821"
       },
       {
-        "file": "tailwind.config.js",
-        "hash": "4320401860339748367"
+        "file": ".nx/nxw.js",
+        "hash": "11254603345854076312"
       },
       {
-        "file": "client/package.json",
-        "hash": "10886507637883740339"
+        "file": "client/package-lock.json",
+        "hash": "15350715926919567331"
       },
       {
-        "file": ".nx/installation/package.json",
-        "hash": "10517613838458045495"
+        "file": "postcss.config.js",
+        "hash": "6152102791407978976"
+      },
+      {
+        "file": "client/README.md",
+        "hash": "17229782188370411291"
+      },
+      {
+        "file": "client/.prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "13194702717607086212"
+      },
+      {
+        "file": "client/.vscode/extensions.json",
+        "hash": "4134969992917317260"
+      },
+      {
+        "file": "client/tsconfig.base.json",
+        "hash": "16936441711144470533"
       },
       {
         "file": "nx",
         "hash": "17165975525224888679"
       },
       {
+        "file": "client/package.json",
+        "hash": "10886507637883740339"
+      },
+      {
+        "file": "client/.github/workflows/ci.yml",
+        "hash": "2869861214747347792"
+      },
+      {
+        "file": "client/.eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "nx.bat",
+        "hash": "16828809655253213278"
+      },
+      {
         "file": "nx.json",
         "hash": "10584956656480960299"
+      },
+      {
+        "file": "client/.eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": "client/.gitignore",
+        "hash": "10634012609596249076"
+      },
+      {
+        "file": "package.json",
+        "hash": "13186482843281493258"
+      },
+      {
+        "file": "client/nx.json",
+        "hash": "10848883168985888489"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "13900527231880248824"
+      },
+      {
+        "file": "tailwind.config.js",
+        "hash": "4320401860339748367"
+      },
+      {
+        "file": ".nx/installation/package.json",
+        "hash": "10517613838458045495"
+      },
+      {
+        "file": "heroicons.d.ts",
+        "hash": "16592861167843731278"
+      },
+      {
+        "file": ".nx/installation/package-lock.json",
+        "hash": "18069280477925702985"
       }
     ],
     "projectFileMap": {
-      "client": [
-        {
-          "file": "client/apps/client/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "client/apps/client/index.html",
-          "hash": "11424016324654718745"
-        },
-        {
-          "file": "client/apps/client/project.json",
-          "hash": "13965554390975936689"
-        },
-        {
-          "file": "client/apps/client/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "client/apps/client/src/app/components/Background.tsx",
-          "hash": "7439874982833582233"
-        },
-        {
-          "file": "client/apps/client/src/app/components/navbar.tsx",
-          "hash": "10238123952466297977"
-        },
-        {
-          "file": "client/apps/client/src/app/images/img1.jpg",
-          "hash": "2899555017786104922"
-        },
-        {
-          "file": "client/apps/client/src/app/images/img2.jpg",
-          "hash": "4375659078919905133"
-        },
-        {
-          "file": "client/apps/client/src/app/images/img3.jpg",
-          "hash": "9758251166418482881"
-        },
-        {
-          "file": "client/apps/client/src/app/images/img4.webp",
-          "hash": "487973341461214971"
-        },
-        {
-          "file": "client/apps/client/src/app/images/img5.jpg",
-          "hash": "15631486773608969590"
-        },
-        {
-          "file": "client/apps/client/src/app/images/img6.jpg",
-          "hash": "17775643527744850300"
-        },
-        {
-          "file": "client/apps/client/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "client/apps/client/src/main.tsx",
-          "hash": "12235292707525510259"
-        },
-        {
-          "file": "client/apps/client/src/styles.css",
-          "hash": "17158533578106095371"
-        },
-        {
-          "file": "client/apps/client/tsconfig.app.json",
-          "hash": "7232119452847825095"
-        },
-        {
-          "file": "client/apps/client/tsconfig.json",
-          "hash": "11166545116916107487"
-        },
-        {
-          "file": "client/apps/client/tsconfig.spec.json",
-          "hash": "9472099605191632308"
-        },
-        {
-          "file": "client/apps/client/vite.config.ts",
-          "hash": "9359911543655382654"
-        },
-        {
-          "file": "client/apps/client/src/app/components/timer.tsx",
-          "hash": "7639799380736988471"
-        },
-        {
-          "file": "client/apps/client/src/app/routes/Blocking.tsx",
-          "hash": "2585137070761297750"
-        },
-        {
-          "file": "client/apps/client/src/app/routes/pomodoro.tsx",
-          "hash": "16457658728695957541"
-        },
-        {
-          "file": "client/apps/client/src/app/routes/fiftytoten.tsx",
-          "hash": "3175933819227538129"
-        }
-      ],
       "client-e2e": [
         {
           "file": "client/apps/client-e2e/.eslintrc.json",
@@ -262,6 +168,108 @@
         {
           "file": "client/apps/client-e2e/tsconfig.json",
           "hash": "10740392072068377465"
+        }
+      ],
+      "client": [
+        {
+          "file": "client/apps/client/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "client/apps/client/index.html",
+          "hash": "11424016324654718745"
+        },
+        {
+          "file": "client/apps/client/project.json",
+          "hash": "13965554390975936689"
+        },
+        {
+          "file": "client/apps/client/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "client/apps/client/src/app/components/Background.tsx",
+          "hash": "16121488498033215356"
+        },
+        {
+          "file": "client/apps/client/src/app/components/navbar.tsx",
+          "hash": "7082481407607514848"
+        },
+        {
+          "file": "client/apps/client/src/app/components/timer.tsx",
+          "hash": "7598488890163515798"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img3.jpg",
+          "hash": "9758251166418482881"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img4.webp",
+          "hash": "487973341461214971"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img5.jpg",
+          "hash": "15631486773608969590"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img6.jpg",
+          "hash": "17775643527744850300"
+        },
+        {
+          "file": "client/apps/client/src/app/routes/Blocking.tsx",
+          "hash": "2585137070761297750"
+        },
+        {
+          "file": "client/apps/client/src/app/routes/fiftytoten.tsx",
+          "hash": "3175933819227538129"
+        },
+        {
+          "file": "client/apps/client/src/app/routes/pomodoro.tsx",
+          "hash": "16457658728695957541"
+        },
+        {
+          "file": "client/apps/client/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "client/apps/client/src/main.tsx",
+          "hash": "7909090901510900924"
+        },
+        {
+          "file": "client/apps/client/src/styles.css",
+          "hash": "17158533578106095371"
+        },
+        {
+          "file": "client/apps/client/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "client/apps/client/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "client/apps/client/tsconfig.spec.json",
+          "hash": "9472099605191632308"
+        },
+        {
+          "file": "client/apps/client/vite.config.ts",
+          "hash": "9359911543655382654"
+        },
+        {
+          "file": "client/apps/client/src/app/components/Timer.css",
+          "hash": "7910623796722671542"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img7.jpg",
+          "hash": "4375659078919905133"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img1.jpg",
+          "hash": "10240956332998052685"
+        },
+        {
+          "file": "client/apps/client/src/app/images/img2.jpg",
+          "hash": "2899555017786104922"
         }
       ]
     }

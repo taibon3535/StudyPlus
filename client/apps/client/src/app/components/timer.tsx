@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Timer.css'; // Importing CSS for styles
 
 interface TimerProps {
   learntime: number;
@@ -7,54 +8,66 @@ interface TimerProps {
 }
 
 export const Timer: React.FC<TimerProps> = ({ learntime, sbrake, lbrake }) => {
-
   const [time, setTime] = useState<number>(0);
-
-  learntime=learntime*60;
-  sbrake=sbrake*60;
-  lbrake=lbrake*60;
-
+  const [activeTime, setActiveTime] = useState<number>(learntime * 60);
+  const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setTime((prevTime) => {
-        if (prevTime <= 0) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prevTime - 1;
-      });
-    }, 1000);
+    let interval: NodeJS.Timeout | null = null;
 
-    return () => clearInterval(interval);
-  }, [time]);
+    if (isTimerRunning) {
+      interval = setInterval(() => {
+        setTime((prevTime) => {
+          if (prevTime <= 1) {
+            clearInterval(interval!);
+            setIsTimerRunning(false);
+            return 0;
+          }
+          return prevTime - 1;
+        });
+      }, 1000);
+    }
+
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isTimerRunning, time]);
+
+  useEffect(() => {
+
+    setTime(activeTime);
+  }, [activeTime]);
 
   const handleButtonClick = (newTime: number) => {
+    setActiveTime(newTime);
     setTime(newTime);
+    setIsTimerRunning(false);
   };
 
-  const containerStyle: React.CSSProperties = {
-    position: 'fixed',
-    top: '35%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    fontSize: '24px',
-    zIndex: 1000,
-    backgroundColor: 'rgba(255, 255, 255, 0.75)',
-    padding: '10px',
-    borderRadius: '10px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '10px',
+  const handleStartButtonClick = () => {
+    if (!isTimerRunning && time === 0) {
+      setTime(activeTime);
+    }
+    setIsTimerRunning(!isTimerRunning);
+  };
+
+  const formatTime = (seconds: number) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   };
 
   return (
-    <div style={containerStyle}>
-      <button onClick={() => handleButtonClick(learntime)}>Learning</button>
-      <button onClick={() => handleButtonClick(sbrake)}>Short Break</button>
-      <button onClick={() => handleButtonClick(lbrake)}>Long Break</button>
-      <div>Time: {time/60-(time%60)/60}:{time%60}</div>
+    <div className="timerContainer">
+      <div className="buttonContainer">
+        <button onClick={() => handleButtonClick(learntime * 60)}>Learning</button>
+        <button onClick={() => handleButtonClick(sbrake * 60)}>Short Break</button>
+        <button onClick={() => handleButtonClick(lbrake * 60)}>Long Break</button>
+      </div>
+      <div className="timerDisplay">{formatTime(time)}</div>
+      <button onClick={handleStartButtonClick}>
+        {isTimerRunning ? 'Pause' : 'Start'}
+      </button>
     </div>
   );
 };
