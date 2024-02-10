@@ -2,13 +2,23 @@ import { StrictMode } from 'react';
 import { Router, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import * as ReactDOM from 'react-dom/client';
 
-import {Root} from './app/routes/Root'
+import {Pomodoro} from './app/routes/pomodoro'
+import Fifty from './app/routes/fiftytoten';
+import Blocking from './app/routes/Blocking';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
+    element: <Pomodoro/>,
     children: [
+      {
+        path: '/FiftyToTen',
+        element: <Fifty/>,
+      },
+      {
+        path: '/Blocking',
+        element: <Blocking/>,
+      },
     ],
   },
 ]);

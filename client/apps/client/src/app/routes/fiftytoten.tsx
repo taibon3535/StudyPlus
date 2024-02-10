@@ -2,13 +2,13 @@ import {Background} from "../components/Background"
 import { Navbar } from "../components/navbar";
 import {Timer} from "../components/timer";
 
-export const Pomodoro = () => {
+export const Fifty = () => {
     return(
         <div>
             <Navbar/>
-            <Timer learntime={25} lbrake={10} sbrake={5}/>
+            <Timer learntime={50} lbrake={20} sbrake={10}/>
             <Background/>
         </div>
         );
 }
-export default Pomodoro;
+export default Fifty;

@@ -26,14 +26,14 @@ export const Navbar = () => {
                 <span>pomodoro</span>
             </Link>
 
-            <Link to="/" style={linkStyle}>
+            <Link to="/FiftyToTen" style={linkStyle}>
                 <AcademicCapIcon style={{ width: '24px', height: '24px' }} />
-                <span>no1</span>
+                <span>fiftytoten</span>
             </Link>
 
-            <Link to="/" style={linkStyle}>
+            <Link to="/Blocking" style={linkStyle}>
                 <AcademicCapIcon style={{ width: '24px', height: '24px' }} />
-                <span>no2</span>
+                <span>Blocking</span>
             </Link>
         </nav>
     );
